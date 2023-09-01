@@ -1,0 +1,16 @@
+# Global configuration options
+{
+  debug
+  #servers :443 {
+  #  protocols h2
+  #}
+}
+
+#
+https://10.63.1.35 {
+  reverse_proxy https://0.0.0.0:4043 {
+    transport http {
+      tls_insecure_skip_verify
+    }
+  }
+}
