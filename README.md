@@ -31,6 +31,10 @@ Use the Caddyfile named `Caddyfile-basic`:
 
 Start the RPM server.
 
+```console
+$ ./networkqualityd --create-cert --public-name <IP> --config-name <IP> --config-name <IP> --listen-addr 0.0.0.0 -debug
+```
+
 Confirm that the proxy is working:
 
 ```console
@@ -47,3 +51,5 @@ $ curl --http2 -k https://10.63.1.35/config
     }
 }
 ```
+
+
