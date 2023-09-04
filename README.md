@@ -52,4 +52,5 @@ $ curl --http2 -k https://10.63.1.35/config
 }
 ```
 
+> Note: Make sure that the port number in the config is pointing to the proper spot. In the non-Caddy configuration, it should point to the 4043 port. For the Caddy configuration, it should point to the 443 port.
 
